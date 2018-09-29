@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body{
+	width:900px;
+	background-color: #dddddd;
+	margin: auto auto auto auto;
+	padding: 10px;
+	background: url('../_imagens/teste.jpg') no-repeat;
+}
+div#login{
+	position:absolute;
+	padding:auto auto;
+}
+div#login fieldset#usuario{
+	width: 300px;
+	height: 200px;
+	position:absolute;
+	padding-left:auto;
+	padding-top:500;
+	background:rgba(255,255,255,.7);	
+}
+
+div#login{
+	position: absolute;
+	margin: auto auto auto auto;
+	border-bottom: 1px #606060 solid;
+	margin-top:100px;
+	margin-left:300px;
+	background:rgba(255,255,255,.4);
+}
+
+div#login h1{
+	margin-left: 90px;
+	color:green;
+}
+
+div#login h3{
+	/*font-family: Nylla UI;*/
+	margin-left: 100px;
+	margin-bottom:-20px;
+	color:#606060;
+}
+div#login h4{
+	font-size: 8pt;
+	float:bottom;
+	text-align:center;
+}
+div#login fieldset#usuario label{
+	margin-left: 50px;
+}

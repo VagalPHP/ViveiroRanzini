@@ -1,0 +1,65 @@
+@charset "UTF-8";
+div#interface{
+
+	width: 900px;
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+#cabecalho{
+	width:200px;
+	left:0px;
+	top:10px;
+	border-bottom: 1px solid;
+}
+
+nav#menu{
+	font-family:myriad, sans-serif;
+	display:block;
+}
+
+nav#menu ul#cadastrar{
+	list-style: none;
+	position:absolute;
+	top:150px;
+	left:0;
+}
+
+nav#menu ul#consultar{
+	list-style: none;
+	position:absolute;
+	top:350px;
+	left:0;
+}
+
+nav#menu li{
+	font-weight:bold;
+	padding:10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	list-style: underline;
+}
+
+nav#menu h2{
+	color:black;
+}
+
+nav#menu a{
+	color:#000000;
+	text-decoration:none;
+	color: green;
+}
+
+nav#menu a:hover{
+	text-decoration:underline;
+	background-color: #dddddd;
+	transition: 1s;
+}
+
+div#main{
+	top:auto;
+	left:auto;
+}
