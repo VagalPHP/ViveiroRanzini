@@ -1,0 +1,25 @@
+<% include partials/header.ejs %>
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        <form class="" action="" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required />
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="apelido" id="apelido" placeholder="Apelido do Cliente" />
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF do Cliente" required />
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="tell" class="form-control" name="celular" id="celular" placeholder="Número de Celular" required />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Adicionar Cliente</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body{
+	background: url('../imagens/banner-login.png') no-repeat;
+	background-size: cover;
+}
+
+#login-cont{
+	margin-top: 7%;
+}
+#fundo-log{
+	height: 100%;
+	background: rgba(242,242,242,0.7);
+	border-radius: 5px;
+}
+
+#fundo-log p{
+	font-family: Nirmala UI;
+	text-align: center;
+	font-size: 0.9em;
+	padding-top: 19%;
+}
+
+#form{
+	padding-top: 15%;
+	margin: auto;
+}
+
+#btn-conectar{
+	margin-left: 8.6%;
+}

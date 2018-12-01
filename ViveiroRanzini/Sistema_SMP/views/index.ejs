@@ -1,0 +1,37 @@
+<% include partials/header.ejs %>
+    <div class="table-wrapper">
+        <% if (cliente.length > 0) {%>
+            <table class="table table-hovered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Apelido</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Celular</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% cliente.forEach((cliente, index) => { %>
+                        <tr>
+                            <th scope="row"><%= cliente.cliente %></th>
+                            <td><%= cliente.nome %></td>
+                            <td><%= cliente.apelido %></td>
+                            <td><%= cliente.cpf %></td>
+                            <td><%= cliente.celular %></td>
+                            <td>
+                                <a href="/edit/<%= cliente.cliente %>" target="_blank" rel="noopener" class="btn btn-sm btn-success">Editar</a>
+                                <a href="/delete/<%= cliente.cliente %>" class="btn btn-sm btn-danger">Remover</a>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">Cliente não encontrado. Clique <a href="/add">aqui</a> para adicionar novos clientes.</p>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>
